@@ -1,0 +1,46 @@
+.page-tabs {
+	display: flex;
+	gap: 40px;
+	position: relative;
+
+	@media (max-width: 768px) {
+		gap: 24px;
+	}
+
+	&__item {
+		display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 500;
+		font-size: 20px;
+    text-decoration: none;
+    color: white;
+		cursor: pointer;
+    transition: all .1s;
+		padding-bottom: 26px;
+
+		@media (max-width: 768px) {
+			font-size: 16px;
+		}
+
+    &:hover {
+      color: var(--hover-color);
+    }
+
+    &.active {
+      font-weight: 700;
+      background: linear-gradient(267.17deg, #9949FF 0%, #5B6CFF 110.14%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+			cursor: auto;
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(267.17deg, #9949FF 0%, #5B6CFF 110.14%), #FFFFFF;
+        margin-bottom: -26px;
+      }
+    }
+	}
+}

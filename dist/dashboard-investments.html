@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.min.css?_v=20220924212752">
+	<title>Dashboard</title>
+</head>
+
+<body class="container">	
+	<div class="mobile-menu">
+	<nav class="main-menu main-menu_mobile">
+		<ul>
+			<li class="main-menu__item active"><a href="./index.html">Dashboard</a></li>
+			<li class="main-menu__item "><a href="invest.html">Invest</a></li>
+			<li class="main-menu__item "><a href="staking-farming.html">Staking & Farming</a></li>
+			<li class="main-menu__item "><a href="transmute.html">Transmute</a></li>
+			<li class="main-menu__item "><a href="second-market.html">Second market</a></li>
+			<li class="main-menu__item "><a href="governance.html">Governance</a></li>
+		</ul>
+	</nav>
+
+	<div class="mobile-menu__params">
+		<div class="mobile-menu__params-item">
+			<span class="mobile-menu__params-title">TVL —</span>
+			<span class="mobile-menu__params-value">$1 342 421</span>
+		</div>
+		<div class="mobile-menu__params-item">
+			<img class="mobile-menu__params-img" src="img/fuel-icon.svg" alt="">
+			<span class="mobile-menu__params-value">24 GWEI</span>
+		</div>
+		<div class="mobile-menu__params-item">			
+			<div class="select select_small">
+				<button class="select__button">
+					<img src="img/usd-icon.svg" alt="">
+					USD
+				</button>
+				<ul class="select__dropdown select__dropdown_mobile">
+					<li class="select__dropdown-item">
+						<img src="img/usd-icon.svg" alt="">
+						<span>USD</span>
+					</li>
+					<li class="select__dropdown-item">
+						<picture><source srcset="img/euro-icon.webp" type="image/webp"><img src="img/euro-icon.png" alt=""></picture>
+						<span>EURO</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-menu__cta-item">
+			<button class="mobile-menu__buy-btn">
+				<img src="img/derep-icon.svg" alt="">
+				<span class="mobile-menu__buy-btn-content">Buy <span>$REP</span> – $0.32</span>
+			</button>
+			<ul class="mobile-menu__cta-item-dropdown">
+				<li><a href="">Buy on UNISWAP</a></li>
+				<li><a href="">Buy on SushiSwap</a></li>
+				<li><a href="">Buy on Binance</a></li>
+			</ul>
+		</div>	
+	</div>
+</div>	
+
+	<div class="connect-wallet-popup popup">
+	<div class="popup__container">
+		<button class="popup__close-button popup-close"></button>
+		<h2 class="popup__title">Connect a wallet</h2>		
+		<div class="connect-wallet-popup__items">
+			<button class="connect-wallet-popup__item">
+				<picture><source srcset="img/metamask-icon.webp" type="image/webp"><img src="img/metamask-icon.png" alt=""></picture>
+				Metamask
+			</button>
+			<button class="connect-wallet-popup__item">
+				<picture><source srcset="img/coinbase-icon.webp" type="image/webp"><img src="img/coinbase-icon.png" alt=""></picture>
+				Coinbase Wallet
+			</button>
+		</div>		
+		<button class="popup__btn btn btn_secondary popup-close">
+			<span>Cancel</span>
+		</button>
+	</div>
+</div>
+	
+	<header class="header">
+	<a class="header__logo" href="/">
+		<img src="img/derep-logo.svg" alt="">
+	</a>	
+
+	<div class="header__params">
+		<div class="header__params-item">
+			<span class="header__params-title">TVL —</span>
+			<span class="header__params-value">$1 342 421</span>
+		</div>
+		<div class="header__params-item">
+			<img class="header__params-img" src="img/fuel-icon.svg" alt="">
+			<span class="header__params-value">24 GWEI</span>
+		</div>
+		<div class="header__params-item">			
+			<div class="select select_small">
+				<button class="select__button">
+					<img src="img/usd-icon.svg" alt="">
+					USD
+				</button>
+				<ul class="select__dropdown">
+					<li class="select__dropdown-item">
+						<img src="img/usd-icon.svg" alt="">
+						<span>USD</span>
+					</li>
+					<li class="select__dropdown-item">
+						<picture><source srcset="img/euro-icon.webp" type="image/webp"><img src="img/euro-icon.png" alt=""></picture>
+						<span>EUR</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header__cta">
+			<div class="header__cta-item">
+				<button class="header__buy-btn header__cta-btn">
+					<img src="img/derep-icon.svg" alt="">
+					<span class="header__cta-btn-content">Buy <span>$REP</span> – $0.32</span>
+				</button>
+				<ul class="header__cta-item-dropdown">
+					<li><a href="">Buy on UNISWAP</a></li>
+					<li><a href="">Buy on SushiSwap</a></li>
+					<li><a href="">Buy on Binance</a></li>
+				</ul>
+			</div>			
+			
+			<!-- Wrong network -->
+			<!-- <span class="header__cta-error">Wrong network</span> -->
+			
+			<div class="header__cta-item">
+				<button class="header__wallet-btn header__cta-btn">
+					<img src="img/wallet-icon.svg" alt="">
+					<span class="header__cta-btn-content">Connect wallet</span>
+				</button>
+				<ul class="header__cta-item-dropdown header__cta-item-dropdown_single">
+					<li><a href="">Log out</a></li>         
+				</ul>
+      </div>      			
+		</div>				
+	</div>
+
+	<button class="menu-button" id="mainMenuButton"></button>
+</header>
+	
+	<main class="main">
+		<div class="navigation">
+	<nav class="main-menu">
+		<ul>
+			<li class="main-menu__item active"><a href="./index.html">Dashboard</a></li>
+			<li class="main-menu__item "><a href="./invest.html">Invest</a></li>
+			<li class="main-menu__item "><a href="./staking-farming.html">Staking & Farming</a></li>
+			<li class="main-menu__item "><a href="./transmute.html">Transmute</a></li>
+			<li class="main-menu__item "><a href="./second-market.html">Second market</a></li>
+			<li class="main-menu__item "><a href="./governance.html">Governance</a></li>
+		</ul>
+	</nav>
+
+	<div class="navigation__bottom">
+		<div class="social-links">
+			<a href=""><img src="img/social-icons/telegram.svg" alt=""></a>
+			<a href=""><img src="img/social-icons/twitter.svg" alt=""></a>
+			<a href=""><img src="img/social-icons/discord.svg" alt=""></a>
+			<a href=""><img src="img/social-icons/github.svg" alt=""></a>
+		</div>	
+		<span class="copyrights">
+			© Rep 2022<br>
+			All rights reserved
+		</span>
+	</div>	
+</div>
+		
+		<div class="content">
+			<div class="content__header">
+				<div class="wrap">
+					<div class="content__header-cnt">
+						<div class="page-tabs">
+							<a class="page-tabs__item" href="./index.html">DeRep overview</a>
+							<a class="page-tabs__item active">Your investments</a>
+						</div>
+						<button class="content__header-btn">Learn more about platform  📖</button>
+					</div>					
+				</div>
+			</div>			
+
+			<div class="wrap">
+				<h1 class="page-title">Overview</h1>
+			</div>
+
+			<div class="dashboard">
+				<div class="wrap">					
+					<div class="dashboard__content">						
+						<div class="dashboard__widgets">
+							<div class="dashboard__widget dashboard__widget_primary">
+								<img class="dashboard__widget-icon" src="img/lock-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">Total Value Locked</span>
+									<span class="dashboard__widget-value">$1 346 213</span>
+								</div>
+							</div>
+							<div class="dashboard__widget">
+								<img class="dashboard__widget-icon" src="img/total-earned-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">Total earned</span>
+									<span class="dashboard__widget-value">$1204</span>
+								</div>
+							</div>															
+							<div class="dashboard__widget">
+								<img class="dashboard__widget-icon" src="img/voting-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">Voting Member</span>
+									<span class="dashboard__widget-value">4 times</span>
+								</div>
+							</div>
+							<div class="dashboard__widget">
+								<img class="dashboard__widget-icon" src="img/sage-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">Real estate projects</span>
+									<span class="dashboard__widget-value">5</span>
+								</div>
+							</div>
+							<div class="dashboard__widget dashboard__widget_vert">
+								<div class="dashboard__widget-container">
+									<img class="dashboard__widget-icon" src="img/unclaimed-reward-icon.svg" alt="">
+									<div class="dashboard__widget-content">
+										<span class="dashboard__widget-title">
+											Unclaimed reward
+											<button class="info-button">?</button>
+										</span>
+										<span class="dashboard__widget-value">$231</span>									
+									</div>	
+								</div>								
+								<button class="btn btn_small">Stake</button>															
+							</div>
+						</div>	
+						
+						<div class="dashboard__viewbox">
+	<div class="dashboard__viewbox-header">
+		<div class="dashboard__filter filter">
+			<label class="filter__item">
+				<input class="filter__input" type="radio" name="graphType" checked>
+				<span class="filter__button">TVL</span>
+			</label>
+			<label class="filter__item">
+				<input class="filter__input" type="radio" name="graphType">
+				<span class="filter__button">Number of investors</span>
+			</label>
+			<label class="filter__item" id="filterStaked">
+				<input class="filter__input" type="radio" name="graphType">
+				<span class="filter__button">Staked $REP</span>
+			</label>									
+		</div>
+		<div class="dashboard__filter filter">
+			<label class="filter__item">
+				<input class="filter__input" type="radio" name="timeScale" checked>
+				<span class="filter__button">1D</span>
+			</label>
+			<label class="filter__item">
+				<input class="filter__input" type="radio" name="timeScale">
+				<span class="filter__button">1W</span>
+			</label>
+			<label class="filter__item">
+				<input class="filter__input" type="radio" name="timeScale">
+				<span class="filter__button">1Y</span>
+			</label>
+			<label class="filter__item">
+				<input class="filter__input" type="radio" name="timeScale">
+				<span class="filter__button">All</span>
+			</label>
+		</div>
+	</div>
+
+	<div class="dashboard__viewbox-content">
+		<picture><source srcset="img/graph-example.webp" type="image/webp"><img src="img/graph-example.png" alt=""></picture>
+	</div>			
+</div>
+					
+					</div>
+				</div>
+			</div>
+
+			<div class="cards-gallery">
+				<div class="wrap">
+					<div class="cards-gallery__header">
+						<h2 class="page-title">Your positions in real estate objects</h2>
+						<div class="dashboard__filter filter">
+							<label class="filter__item">
+								<input class="filter__input" type="radio" name="posGalleryFilter" checked>
+								<span class="filter__button">Current</span>
+							</label>
+							<label class="filter__item">
+								<input class="filter__input" type="radio" name="posGalleryFilter">
+								<span class="filter__button">History</span>
+							</label>															
+						</div>
+					</div>
+
+					<div class="cards-gallery__content cards-gallery__content_4col">
+
+						
+							<div class="position-card card">
+	<picture><source srcset="img/card-example-image.webp" type="image/webp"><img class="position-card__image" src="img/card-example-image.jpg" alt=""></picture>
+	<div class="card__title-block">
+		<div class="card__name">
+			<h3 class="card__title">Miami Gold Resort</h3>
+			<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+		</div>
+		<button class="card__enter-btn"></button>
+	</div>
+	<div class="card__params">
+		<div class="card__params-item">
+			<span class="card__params-item-name">APY</span>
+			<span class="card__params-item-value card__params-item-value_primary">32%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Earned $</span>
+			<span class="card__params-item-value card__params-item-value_primary">$123</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Earned %</span>
+			<span class="card__params-item-value">11.3%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Your deposit</span>
+			<span class="card__params-item-value">$12 031</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Project end date</span>
+			<span class="card__params-item-value">01.06.2024</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Unclaimed reward</span>
+			<span class="card__params-item-value">$32</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Claim date</span>
+			<span class="card__params-item-value">01.12.2022</span>
+		</div>
+	</div>
+</div>
+						
+							<div class="position-card card">
+	<picture><source srcset="img/card-example-image.webp" type="image/webp"><img class="position-card__image" src="img/card-example-image.jpg" alt=""></picture>
+	<div class="card__title-block">
+		<div class="card__name">
+			<h3 class="card__title">Miami Gold Resort</h3>
+			<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+		</div>
+		<button class="card__enter-btn"></button>
+	</div>
+	<div class="card__params">
+		<div class="card__params-item">
+			<span class="card__params-item-name">APY</span>
+			<span class="card__params-item-value card__params-item-value_primary">32%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Earned $</span>
+			<span class="card__params-item-value card__params-item-value_primary">$123</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Earned %</span>
+			<span class="card__params-item-value">11.3%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Your deposit</span>
+			<span class="card__params-item-value">$12 031</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Project end date</span>
+			<span class="card__params-item-value">01.06.2024</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Unclaimed reward</span>
+			<span class="card__params-item-value">$32</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Claim date</span>
+			<span class="card__params-item-value">01.12.2022</span>
+		</div>
+	</div>
+</div>
+						
+							<div class="position-card card">
+	<picture><source srcset="img/card-example-image.webp" type="image/webp"><img class="position-card__image" src="img/card-example-image.jpg" alt=""></picture>
+	<div class="card__title-block">
+		<div class="card__name">
+			<h3 class="card__title">Miami Gold Resort</h3>
+			<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+		</div>
+		<button class="card__enter-btn"></button>
+	</div>
+	<div class="card__params">
+		<div class="card__params-item">
+			<span class="card__params-item-name">APY</span>
+			<span class="card__params-item-value card__params-item-value_primary">32%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Earned $</span>
+			<span class="card__params-item-value card__params-item-value_primary">$123</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Earned %</span>
+			<span class="card__params-item-value">11.3%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Your deposit</span>
+			<span class="card__params-item-value">$12 031</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Project end date</span>
+			<span class="card__params-item-value">01.06.2024</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Unclaimed reward</span>
+			<span class="card__params-item-value">$32</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Claim date</span>
+			<span class="card__params-item-value">01.12.2022</span>
+		</div>
+	</div>
+</div>
+						
+							<div class="position-card card">
+	<picture><source srcset="img/card-example-image.webp" type="image/webp"><img class="position-card__image" src="img/card-example-image.jpg" alt=""></picture>
+	<div class="card__title-block">
+		<div class="card__name">
+			<h3 class="card__title">Miami Gold Resort</h3>
+			<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+		</div>
+		<button class="card__enter-btn"></button>
+	</div>
+	<div class="card__params">
+		<div class="card__params-item">
+			<span class="card__params-item-name">APY</span>
+			<span class="card__params-item-value card__params-item-value_primary">32%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Earned $</span>
+			<span class="card__params-item-value card__params-item-value_primary">$123</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Earned %</span>
+			<span class="card__params-item-value">11.3%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Your deposit</span>
+			<span class="card__params-item-value">$12 031</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Project end date</span>
+			<span class="card__params-item-value">01.06.2024</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Unclaimed reward</span>
+			<span class="card__params-item-value">$32</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">Claim date</span>
+			<span class="card__params-item-value">01.12.2022</span>
+		</div>
+	</div>
+</div>
+												
+
+						<div class="cards-gallery__empty">
+							<h3 class="cards-gallery__empty-title">You have no open positions</h3>
+							<button class="btn">View the list of objects</button>
+						</div>																		
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>	
+	<script src="./js/app.min.js?_v=20220924212752"></script>
+</body>
+</html>

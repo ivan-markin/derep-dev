@@ -1,0 +1,24 @@
+.external-link {
+	display: flex;
+	// align-items: center;
+	gap: 6px;
+	font-weight: 500;
+	font-size: 16px;
+	width: fit-content;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(267.17deg, #9949FF 0%, #5B6CFF 110.14%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	margin: 0 auto;
+
+	&::before {
+		content: '';
+		width: 24px;
+		height: 24px;
+		background: url('../../img/link-icon.svg') no-repeat center;
+		background-size: contain;
+		position: relative;
+		top: -3px;
+	}
+}

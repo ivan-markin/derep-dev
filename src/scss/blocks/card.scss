@@ -1,0 +1,89 @@
+.card {
+	border-radius: 16px;
+	border: #ADB6FF26 1px solid;
+	padding: 24px;
+
+	&__title-block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 16px;
+	}
+
+	&__name {
+
+	}
+
+	&__title {
+		color: white;
+		font-weight: 700;
+		font-size: 20px;
+		margin: 0 0 4px;
+	}
+
+	&__subtitle {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		font-weight: 500;
+		font-size: 16px;
+		color: #B7B7B7;		
+
+		&_badge {			
+			&::after {
+				content: '';
+				width: 16px;
+				height: 16px;
+				background: url('../../img/success-badge.svg') no-repeat center;
+				background-size: contain;
+			}
+		}
+	}
+
+	&__enter-btn {
+		width: 40px;
+		height: 40px;
+		border: none;
+		background: url('../../img/enter-icon.svg') no-repeat center;
+		background-size: contain;
+		cursor: pointer;
+	}
+
+	&__params {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;		
+	}
+
+	&__params-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&-name {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+			color: white;
+			opacity: .7;
+			font-weight: 500;
+			font-size: 14px;
+		}
+
+		&-value {
+			font-weight: 700;
+			font-size: 16px;
+			color: white;
+
+			&_primary {
+				font-weight: 700;
+				font-size: 20px;
+				background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(267.17deg, #9949FF 0%, #5B6CFF 110.14%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+			}
+		}
+	}
+}

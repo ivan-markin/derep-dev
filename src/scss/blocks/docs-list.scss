@@ -1,0 +1,32 @@
+.docs-list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 0;
+	margin: 0;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 9px;
+		list-style: none;
+		font-size: 16px;
+		font-weight: 500;
+
+		&::before {
+			content: '';
+			width: 10px;
+			height: 14px;
+			background: url('../../img/doc-icon.svg') no-repeat center;
+		}
+
+		a {
+			text-decoration: none;
+			background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(267.17deg, #9949FF 0%, #5B6CFF 110.14%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+		}
+	}
+}

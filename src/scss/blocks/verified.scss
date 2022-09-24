@@ -1,0 +1,16 @@
+.verified {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-weight: 500;
+	font-size: 16px;	
+	color: #7EB763;
+
+	&::after {
+		content: '';
+		width: 16px;
+		height: 16px;
+		background: url('../../img/success-badge.svg') no-repeat center;
+		background-size: contain;
+	}
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+	"title": "Dashboard"
+})
+
+<body class="container">	
+	@@include('html/mobile-menu.html', {
+		dashboard: 'active',
+		invest: '',
+		staking: '',
+		transmute: '',
+		secondMarket: '',
+		governance: ''
+	})	
+
+	@@include('html/connect-wallet-popup.html', {})
+	
+	@@include('html/header.html', {})
+	
+	<main class="main">
+		@@include('html/navigation.html', {
+			dashboard: 'active',
+      invest: '',
+      staking: '',
+      transmute: '',
+      secondMarket: '',
+      governance: ''
+		})
+		
+		<div class="content">
+			<div class="content__header">
+				<div class="wrap">
+					<div class="content__header-cnt">
+						<div class="page-tabs">
+							<a class="page-tabs__item" href="./index.html">DeRep overview</a>
+							<a class="page-tabs__item active">Your investments</a>
+						</div>
+						<button class="content__header-btn">Learn more about platform  📖</button>
+					</div>					
+				</div>
+			</div>			
+
+			<div class="wrap">
+				<h1 class="page-title">Overview</h1>
+			</div>
+
+			<div class="dashboard">
+				<div class="wrap">					
+					<div class="dashboard__content">						
+						<div class="dashboard__widgets">
+							<div class="dashboard__widget dashboard__widget_primary">
+								<img class="dashboard__widget-icon" src="@img/lock-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">Total Value Locked</span>
+									<span class="dashboard__widget-value">$1 346 213</span>
+								</div>
+							</div>
+							<div class="dashboard__widget">
+								<img class="dashboard__widget-icon" src="@img/total-earned-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">Total earned</span>
+									<span class="dashboard__widget-value">$1204</span>
+								</div>
+							</div>															
+							<div class="dashboard__widget">
+								<img class="dashboard__widget-icon" src="@img/voting-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">Voting Member</span>
+									<span class="dashboard__widget-value">4 times</span>
+								</div>
+							</div>
+							<div class="dashboard__widget">
+								<img class="dashboard__widget-icon" src="@img/sage-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">Real estate projects</span>
+									<span class="dashboard__widget-value">5</span>
+								</div>
+							</div>
+							<div class="dashboard__widget dashboard__widget_vert">
+								<div class="dashboard__widget-container">
+									<img class="dashboard__widget-icon" src="@img/unclaimed-reward-icon.svg" alt="">
+									<div class="dashboard__widget-content">
+										<span class="dashboard__widget-title">
+											Unclaimed reward
+											<button class="info-button">?</button>
+										</span>
+										<span class="dashboard__widget-value">$231</span>									
+									</div>	
+								</div>								
+								<button class="btn btn_small">Stake</button>															
+							</div>
+						</div>	
+						
+						@@include('html/dashboard.html', {})
+					
+					</div>
+				</div>
+			</div>
+
+			<div class="cards-gallery">
+				<div class="wrap">
+					<div class="cards-gallery__header">
+						<h2 class="page-title">Your positions in real estate objects</h2>
+						<div class="dashboard__filter filter">
+							<label class="filter__item">
+								<input class="filter__input" type="radio" name="posGalleryFilter" checked>
+								<span class="filter__button">Current</span>
+							</label>
+							<label class="filter__item">
+								<input class="filter__input" type="radio" name="posGalleryFilter">
+								<span class="filter__button">History</span>
+							</label>															
+						</div>
+					</div>
+
+					<div class="cards-gallery__content cards-gallery__content_4col">
+
+						@@for (var i = 0; i < 4; i++) {
+							@@include('html/position-card.html', {})
+						}						
+
+						<div class="cards-gallery__empty">
+							<h3 class="cards-gallery__empty-title">You have no open positions</h3>
+							<button class="btn">View the list of objects</button>
+						</div>																		
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>	
+	<script src="./js/app.min.js"></script>
+</body>
+</html>

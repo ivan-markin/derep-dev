@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+	"title": "Transmute"
+})
+
+<body class="container">	
+	@@include('html/mobile-menu.html', {
+		dashboard: '',
+		invest: '',
+		staking: '',
+		transmute: 'active',
+		secondMarket: '',
+		governance: ''
+	})	
+	
+	@@include('html/connect-wallet-popup.html', {})
+	
+	@@include('html/header.html', {})
+	
+	<main class="main">
+		@@include('html/navigation.html', {
+			dashboard: '',
+      invest: '',
+      staking: '',
+      transmute: 'active',
+      secondMarket: '',
+      governance: ''
+		})
+		
+		<div class="content content_no-header">															
+
+			<div class="wrap">				
+				<div class="transmute">
+					<div class="transmute__widgets">
+						<div class="widget">
+							<div class="widget__content">
+								<div class="widget__title">
+									You borrowed:
+									<button class="info-button">?</button>
+								</div>
+								<div class="widget__value">$0</div>
+							</div>
+						</div>
+						<div class="widget">
+							<div class="widget__content">
+								<div class="widget__title">
+									Average percentage of your loans
+									<button class="info-button">?</button>
+								</div>
+								<div class="widget__value">0%</div>
+							</div>
+						</div>
+						<div class="widget">
+							<div class="widget__content">
+								<div class="widget__title">
+									Expected to return:
+									<button class="info-button">?</button>
+								</div>
+								<div class="widget__value">0</div>
+							</div>
+						</div>
+					</div>
+
+					<h2 class="page-title">Get a loan secured by LP-REP tokens</h2>
+
+					<div class="transmute__content">
+						<div class="transmute__item card">
+							<img class="transmute__item-image" src="@img/object-page-gallery/image-2.jpg" alt="">
+							<div class="transmute__item-name card__name">
+								<h3 class="transmute__item-title card__title">Miami Gold Resort LP-REP</h3>
+								<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+							</div>							
+							<div class="transmute__item-params card__params">
+								<div class="card__params-item">
+									<span class="card__params-item-name">
+										Borrow APY
+										<button class="info-button">?</button>
+									</span>
+									<span class="card__params-item-value card__params-item-value_primary">32%</span>
+								</div>
+								<div class="card__params-item">
+									<span class="card__params-item-name">
+										Loan provider
+										<button class="info-button">?</button>
+									</span>
+									<span class="card__params-item-value">AAVE</span>
+								</div>
+								<div class="card__params-item">
+									<span class="card__params-item-name">
+										Amount ready to borrow
+										<button class="info-button">?</button>
+									</span>
+									<span class="card__params-item-value">$2 321 241</span>
+								</div>
+							</div>
+							<div class="transmute__card-tabs card-tabs">
+								<a class="card-tabs__item active">Borrow</a>
+								<a class="card-tabs__item" href="">Pay back the debt</a>
+							</div>
+							<div class="transmute__inputs">
+								<div class="input-container">
+									<label class="input-label">Token</label>
+									<div class="select select_regular">
+										<div class="select__button">USDT</div>
+										<div class="select__dropdown"></div>
+									</div>
+									<span class="input-subscription">
+										You will receive: 0 USDT
+										<img class="input-subscription-icon" src="./img/token-icon.png" alt="">
+									</span>									
+								</div>
+								<div class="input-container">
+									<label class="input-label"><b>Miami Gold Resort LP-REP</b> amount</label>
+									<input class="text-input" type="text" placeholder="Amount">
+								</div>
+							</div>
+						</div>
+
+						<div class="transmute__item card">
+							<img class="transmute__item-image" src="@img/object-page-gallery/image-2.jpg" alt="">
+							<div class="transmute__item-name card__name">
+								<h3 class="transmute__item-title card__title">Miami Gold Resort LP-REP</h3>
+								<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+							</div>							
+							<div class="transmute__item-params card__params">
+								<div class="card__params-item">
+									<span class="card__params-item-name">
+										Borrow APY
+										<button class="info-button">?</button>
+									</span>
+									<span class="card__params-item-value card__params-item-value_primary">32%</span>
+								</div>
+								<div class="card__params-item">
+									<span class="card__params-item-name">
+										Loan provider
+										<button class="info-button">?</button>
+									</span>
+									<span class="card__params-item-value">AAVE</span>
+								</div>
+								<div class="card__params-item">
+									<span class="card__params-item-name">
+										Amount ready to borrow
+										<button class="info-button">?</button>
+									</span>
+									<span class="card__params-item-value">$2 321 241</span>
+								</div>
+							</div>
+							<div class="transmute__card-tabs card-tabs">
+								<a class="card-tabs__item active">Borrow</a>
+								<a class="card-tabs__item" href="">Pay back the debt</a>
+							</div>
+							<div class="transmute__inputs">
+								<div class="input-container">
+									<label class="input-label">Token</label>
+									<div class="select select_regular">
+										<div class="select__button">USDT</div>
+										<div class="select__dropdown"></div>
+									</div>
+									<span class="input-subscription">
+										You will receive: 0 USDT
+										<img class="input-subscription-icon" src="./img/token-icon.png" alt="">
+									</span>									
+								</div>
+								<div class="input-container">
+									<label class="input-label"><b>Miami Gold Resort LP-REP</b> amount</label>
+									<input class="text-input" type="text" placeholder="Amount">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>	
+	<script src="./js/app.min.js"></script>
+</body>
+</html>

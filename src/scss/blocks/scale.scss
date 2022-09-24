@@ -1,0 +1,47 @@
+.scale {
+	margin-bottom: 20px;
+
+	&__progress {
+		height: 4px;
+		border-radius: 2px;
+		background-color: #2E2E2E;
+
+		&-bar {
+			height: 4px;
+			border-radius: 2px;
+			background: linear-gradient(267.17deg, #9949FF 0%, #5B6CFF 110.14%);
+			width: 35%;
+		}
+	}
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 8px;
+	
+		&_left,
+		&_right {
+			display: flex;
+			flex-direction: column;
+			gap: 3px;
+		}
+	
+		&_right {
+			text-align: right;
+		}		
+	}	
+
+	&__item-name {
+		color: white;
+		opacity: .7;
+		font-weight: 500;
+		font-size: 14px;
+	}
+
+	&__item-value {
+		font-weight: 700;
+		font-size: 16px;
+		color: white;
+	}
+}
+

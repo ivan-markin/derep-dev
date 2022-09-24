@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.min.css?_v=20220924212752">
+	<title>Transmute</title>
+</head>
+
+<body class="container">	
+	<div class="mobile-menu">
+	<nav class="main-menu main-menu_mobile">
+		<ul>
+			<li class="main-menu__item "><a href="./index.html">Dashboard</a></li>
+			<li class="main-menu__item "><a href="invest.html">Invest</a></li>
+			<li class="main-menu__item "><a href="staking-farming.html">Staking & Farming</a></li>
+			<li class="main-menu__item "><a href="transmute.html">Transmute</a></li>
+			<li class="main-menu__item active"><a href="second-market.html">Second market</a></li>
+			<li class="main-menu__item "><a href="governance.html">Governance</a></li>
+		</ul>
+	</nav>
+
+	<div class="mobile-menu__params">
+		<div class="mobile-menu__params-item">
+			<span class="mobile-menu__params-title">TVL —</span>
+			<span class="mobile-menu__params-value">$1 342 421</span>
+		</div>
+		<div class="mobile-menu__params-item">
+			<img class="mobile-menu__params-img" src="img/fuel-icon.svg" alt="">
+			<span class="mobile-menu__params-value">24 GWEI</span>
+		</div>
+		<div class="mobile-menu__params-item">			
+			<div class="select select_small">
+				<button class="select__button">
+					<img src="img/usd-icon.svg" alt="">
+					USD
+				</button>
+				<ul class="select__dropdown select__dropdown_mobile">
+					<li class="select__dropdown-item">
+						<img src="img/usd-icon.svg" alt="">
+						<span>USD</span>
+					</li>
+					<li class="select__dropdown-item">
+						<picture><source srcset="img/euro-icon.webp" type="image/webp"><img src="img/euro-icon.png" alt=""></picture>
+						<span>EURO</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mobile-menu__cta-item">
+			<button class="mobile-menu__buy-btn">
+				<img src="img/derep-icon.svg" alt="">
+				<span class="mobile-menu__buy-btn-content">Buy <span>$REP</span> – $0.32</span>
+			</button>
+			<ul class="mobile-menu__cta-item-dropdown">
+				<li><a href="">Buy on UNISWAP</a></li>
+				<li><a href="">Buy on SushiSwap</a></li>
+				<li><a href="">Buy on Binance</a></li>
+			</ul>
+		</div>	
+	</div>
+</div>	
+	
+	<div class="connect-wallet-popup popup">
+	<div class="popup__container">
+		<button class="popup__close-button popup-close"></button>
+		<h2 class="popup__title">Connect a wallet</h2>		
+		<div class="connect-wallet-popup__items">
+			<button class="connect-wallet-popup__item">
+				<picture><source srcset="img/metamask-icon.webp" type="image/webp"><img src="img/metamask-icon.png" alt=""></picture>
+				Metamask
+			</button>
+			<button class="connect-wallet-popup__item">
+				<picture><source srcset="img/coinbase-icon.webp" type="image/webp"><img src="img/coinbase-icon.png" alt=""></picture>
+				Coinbase Wallet
+			</button>
+		</div>		
+		<button class="popup__btn btn btn_secondary popup-close">
+			<span>Cancel</span>
+		</button>
+	</div>
+</div>
+	
+	<header class="header">
+	<a class="header__logo" href="/">
+		<img src="img/derep-logo.svg" alt="">
+	</a>	
+
+	<div class="header__params">
+		<div class="header__params-item">
+			<span class="header__params-title">TVL —</span>
+			<span class="header__params-value">$1 342 421</span>
+		</div>
+		<div class="header__params-item">
+			<img class="header__params-img" src="img/fuel-icon.svg" alt="">
+			<span class="header__params-value">24 GWEI</span>
+		</div>
+		<div class="header__params-item">			
+			<div class="select select_small">
+				<button class="select__button">
+					<img src="img/usd-icon.svg" alt="">
+					USD
+				</button>
+				<ul class="select__dropdown">
+					<li class="select__dropdown-item">
+						<img src="img/usd-icon.svg" alt="">
+						<span>USD</span>
+					</li>
+					<li class="select__dropdown-item">
+						<picture><source srcset="img/euro-icon.webp" type="image/webp"><img src="img/euro-icon.png" alt=""></picture>
+						<span>EUR</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header__cta">
+			<div class="header__cta-item">
+				<button class="header__buy-btn header__cta-btn">
+					<img src="img/derep-icon.svg" alt="">
+					<span class="header__cta-btn-content">Buy <span>$REP</span> – $0.32</span>
+				</button>
+				<ul class="header__cta-item-dropdown">
+					<li><a href="">Buy on UNISWAP</a></li>
+					<li><a href="">Buy on SushiSwap</a></li>
+					<li><a href="">Buy on Binance</a></li>
+				</ul>
+			</div>			
+			
+			<!-- Wrong network -->
+			<!-- <span class="header__cta-error">Wrong network</span> -->
+			
+			<div class="header__cta-item">
+				<button class="header__wallet-btn header__cta-btn">
+					<img src="img/wallet-icon.svg" alt="">
+					<span class="header__cta-btn-content">Connect wallet</span>
+				</button>
+				<ul class="header__cta-item-dropdown header__cta-item-dropdown_single">
+					<li><a href="">Log out</a></li>         
+				</ul>
+      </div>      			
+		</div>				
+	</div>
+
+	<button class="menu-button" id="mainMenuButton"></button>
+</header>
+	
+	<main class="main">
+		<div class="navigation">
+	<nav class="main-menu">
+		<ul>
+			<li class="main-menu__item "><a href="./index.html">Dashboard</a></li>
+			<li class="main-menu__item "><a href="./invest.html">Invest</a></li>
+			<li class="main-menu__item "><a href="./staking-farming.html">Staking & Farming</a></li>
+			<li class="main-menu__item "><a href="./transmute.html">Transmute</a></li>
+			<li class="main-menu__item active"><a href="./second-market.html">Second market</a></li>
+			<li class="main-menu__item "><a href="./governance.html">Governance</a></li>
+		</ul>
+	</nav>
+
+	<div class="navigation__bottom">
+		<div class="social-links">
+			<a href=""><img src="img/social-icons/telegram.svg" alt=""></a>
+			<a href=""><img src="img/social-icons/twitter.svg" alt=""></a>
+			<a href=""><img src="img/social-icons/discord.svg" alt=""></a>
+			<a href=""><img src="img/social-icons/github.svg" alt=""></a>
+		</div>	
+		<span class="copyrights">
+			© Rep 2022<br>
+			All rights reserved
+		</span>
+	</div>	
+</div>
+		
+		<div class="content content_no-header">															
+
+			<div class="wrap">				
+				<div class="second-market">
+					<div class="second-market__header">
+						<h2 class="second-market__title page-title">Orders</h2>
+						<div class="second-market__header-filters">
+							<div class="second-market__header-filters-item select select_regular">
+								<button class="select__button">Sort by</button>
+								<div class="select__dropdown"></div>
+							</div>							
+							<button class="second-market__header-filters-item btn btn_wide btn_secondary">
+								<span>Create order</span>
+							</button>
+						</div>
+					</div>
+					<div class="second-market__content">
+						
+						
+							<div class="second-market__item card">
+	<div class="second-market__item-name card__name">
+		<h3 class="card__title">Miami Gold Resort LP-REP</h3>
+		<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+	</div>
+	<div class="second-market__item-params card__params">
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Price per one token
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">0,32$</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Object APY
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">32%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of order creation
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">22.06.2022</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of LP expiration
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">24.09.2025</span>
+		</div>
+	</div>
+	<div class="second-market__item-amount widget">
+		<div class="widget__content">
+			<span class="widget__title">Amount</span>
+			<span class="widget__value">
+				<span>34 312 345 LP-REP</span>
+				<span class="widget__value-gray">$4 321</span>
+			</span>
+			<span class="widget__subscription"><b>5$ –</b> LP token predictible value at the expiration date</span>
+		</div>								
+	</div>
+	<div class="second-market__item-input input-container">
+		<label class="input-label">Miami Gold Resort LP-REP amount</label>
+		<input class="text-input" type="text" placeholder="Amount">
+		<span class="input-subscription">
+			You will pay: 0 USDT
+			<picture><source srcset="img/token-icon.webp" type="image/webp"><img class="input-subscription-icon" src="img/token-icon.png" alt=""></picture>
+		</span>
+		<button class="input-container__max-btn">Max</button>
+	</div>
+	<button class="btn btn_wide">Buy</button>
+</div>
+						
+							<div class="second-market__item card">
+	<div class="second-market__item-name card__name">
+		<h3 class="card__title">Miami Gold Resort LP-REP</h3>
+		<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+	</div>
+	<div class="second-market__item-params card__params">
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Price per one token
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">0,32$</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Object APY
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">32%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of order creation
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">22.06.2022</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of LP expiration
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">24.09.2025</span>
+		</div>
+	</div>
+	<div class="second-market__item-amount widget">
+		<div class="widget__content">
+			<span class="widget__title">Amount</span>
+			<span class="widget__value">
+				<span>34 312 345 LP-REP</span>
+				<span class="widget__value-gray">$4 321</span>
+			</span>
+			<span class="widget__subscription"><b>5$ –</b> LP token predictible value at the expiration date</span>
+		</div>								
+	</div>
+	<div class="second-market__item-input input-container">
+		<label class="input-label">Miami Gold Resort LP-REP amount</label>
+		<input class="text-input" type="text" placeholder="Amount">
+		<span class="input-subscription">
+			You will pay: 0 USDT
+			<picture><source srcset="img/token-icon.webp" type="image/webp"><img class="input-subscription-icon" src="img/token-icon.png" alt=""></picture>
+		</span>
+		<button class="input-container__max-btn">Max</button>
+	</div>
+	<button class="btn btn_wide">Buy</button>
+</div>
+						
+							<div class="second-market__item card">
+	<div class="second-market__item-name card__name">
+		<h3 class="card__title">Miami Gold Resort LP-REP</h3>
+		<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+	</div>
+	<div class="second-market__item-params card__params">
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Price per one token
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">0,32$</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Object APY
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">32%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of order creation
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">22.06.2022</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of LP expiration
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">24.09.2025</span>
+		</div>
+	</div>
+	<div class="second-market__item-amount widget">
+		<div class="widget__content">
+			<span class="widget__title">Amount</span>
+			<span class="widget__value">
+				<span>34 312 345 LP-REP</span>
+				<span class="widget__value-gray">$4 321</span>
+			</span>
+			<span class="widget__subscription"><b>5$ –</b> LP token predictible value at the expiration date</span>
+		</div>								
+	</div>
+	<div class="second-market__item-input input-container">
+		<label class="input-label">Miami Gold Resort LP-REP amount</label>
+		<input class="text-input" type="text" placeholder="Amount">
+		<span class="input-subscription">
+			You will pay: 0 USDT
+			<picture><source srcset="img/token-icon.webp" type="image/webp"><img class="input-subscription-icon" src="img/token-icon.png" alt=""></picture>
+		</span>
+		<button class="input-container__max-btn">Max</button>
+	</div>
+	<button class="btn btn_wide">Buy</button>
+</div>
+						
+							<div class="second-market__item card">
+	<div class="second-market__item-name card__name">
+		<h3 class="card__title">Miami Gold Resort LP-REP</h3>
+		<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+	</div>
+	<div class="second-market__item-params card__params">
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Price per one token
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">0,32$</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Object APY
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">32%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of order creation
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">22.06.2022</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of LP expiration
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">24.09.2025</span>
+		</div>
+	</div>
+	<div class="second-market__item-amount widget">
+		<div class="widget__content">
+			<span class="widget__title">Amount</span>
+			<span class="widget__value">
+				<span>34 312 345 LP-REP</span>
+				<span class="widget__value-gray">$4 321</span>
+			</span>
+			<span class="widget__subscription"><b>5$ –</b> LP token predictible value at the expiration date</span>
+		</div>								
+	</div>
+	<div class="second-market__item-input input-container">
+		<label class="input-label">Miami Gold Resort LP-REP amount</label>
+		<input class="text-input" type="text" placeholder="Amount">
+		<span class="input-subscription">
+			You will pay: 0 USDT
+			<picture><source srcset="img/token-icon.webp" type="image/webp"><img class="input-subscription-icon" src="img/token-icon.png" alt=""></picture>
+		</span>
+		<button class="input-container__max-btn">Max</button>
+	</div>
+	<button class="btn btn_wide">Buy</button>
+</div>
+						
+							<div class="second-market__item card">
+	<div class="second-market__item-name card__name">
+		<h3 class="card__title">Miami Gold Resort LP-REP</h3>
+		<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+	</div>
+	<div class="second-market__item-params card__params">
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Price per one token
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">0,32$</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Object APY
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">32%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of order creation
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">22.06.2022</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of LP expiration
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">24.09.2025</span>
+		</div>
+	</div>
+	<div class="second-market__item-amount widget">
+		<div class="widget__content">
+			<span class="widget__title">Amount</span>
+			<span class="widget__value">
+				<span>34 312 345 LP-REP</span>
+				<span class="widget__value-gray">$4 321</span>
+			</span>
+			<span class="widget__subscription"><b>5$ –</b> LP token predictible value at the expiration date</span>
+		</div>								
+	</div>
+	<div class="second-market__item-input input-container">
+		<label class="input-label">Miami Gold Resort LP-REP amount</label>
+		<input class="text-input" type="text" placeholder="Amount">
+		<span class="input-subscription">
+			You will pay: 0 USDT
+			<picture><source srcset="img/token-icon.webp" type="image/webp"><img class="input-subscription-icon" src="img/token-icon.png" alt=""></picture>
+		</span>
+		<button class="input-container__max-btn">Max</button>
+	</div>
+	<button class="btn btn_wide">Buy</button>
+</div>
+						
+							<div class="second-market__item card">
+	<div class="second-market__item-name card__name">
+		<h3 class="card__title">Miami Gold Resort LP-REP</h3>
+		<span class="card__subtitle card__subtitle_badge">Lennar Corporation</span>
+	</div>
+	<div class="second-market__item-params card__params">
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Price per one token
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">0,32$</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Object APY
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value card__params-item-value_primary">32%</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of order creation
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">22.06.2022</span>
+		</div>
+		<div class="card__params-item">
+			<span class="card__params-item-name">
+				Date of LP expiration
+				<button class="info-button">?</button>
+			</span>
+			<span class="card__params-item-value">24.09.2025</span>
+		</div>
+	</div>
+	<div class="second-market__item-amount widget">
+		<div class="widget__content">
+			<span class="widget__title">Amount</span>
+			<span class="widget__value">
+				<span>34 312 345 LP-REP</span>
+				<span class="widget__value-gray">$4 321</span>
+			</span>
+			<span class="widget__subscription"><b>5$ –</b> LP token predictible value at the expiration date</span>
+		</div>								
+	</div>
+	<div class="second-market__item-input input-container">
+		<label class="input-label">Miami Gold Resort LP-REP amount</label>
+		<input class="text-input" type="text" placeholder="Amount">
+		<span class="input-subscription">
+			You will pay: 0 USDT
+			<picture><source srcset="img/token-icon.webp" type="image/webp"><img class="input-subscription-icon" src="img/token-icon.png" alt=""></picture>
+		</span>
+		<button class="input-container__max-btn">Max</button>
+	</div>
+	<button class="btn btn_wide">Buy</button>
+</div>
+						
+												
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>	
+	<script src="./js/app.min.js?_v=20220924212752"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.widgets {
+	display: flex;
+	flex-direction: column;	
+
+	&_hor {
+		flex-direction: row;
+		gap: 24px;
+		margin-bottom: 56px;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+
+		.widget {
+			height: 127px;
+		}
+	}
+}

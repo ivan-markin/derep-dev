@@ -1,0 +1,54 @@
+.transmute {
+
+	&__widgets {
+		display: flex;
+		gap: 24px;
+		margin-bottom: 56px;
+
+		@media (max-width: 1024px) {
+			flex-direction: column;
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 32px;
+
+		@media (max-width: 1024px) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__item {
+
+		&-image {
+			width: 100%;
+			height: 194px;
+			object-fit: cover;
+			border-radius: 9px;
+			margin-bottom: 24px;
+		}
+
+		&-name {
+			margin-bottom: 24px;
+		}
+
+		&-params {
+			margin-bottom: 40px;
+		}		
+	}
+
+	&__card-tabs {
+		margin-bottom: 24px;
+	}
+
+	&__inputs {
+		display: flex;
+		gap: 24px;
+
+		@media (max-width: 1440px) {
+			flex-direction: column;
+		}		
+	}
+}

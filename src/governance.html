@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+	"title": "Governance"
+})
+
+<body class="container">	
+	@@include('html/mobile-menu.html', {
+		dashboard: '',
+		invest: '',
+		staking: '',
+		transmute: '',
+		secondMarket: '',
+		governance: 'active'
+	})	
+
+	@@include('html/connect-wallet-popup.html', {})
+	
+	@@include('html/header.html', {})
+	
+	<main class="main">
+		@@include('html/navigation.html', {
+			dashboard: '',
+      invest: '',
+      staking: '',
+      transmute: '',
+      secondMarket: '',
+      governance: 'active'
+		})
+		
+		<div class="content content_no-header">															
+
+			<div class="wrap">				
+				<div class="governance">
+					<h2 class="governance__title page-title">Recent proposals</h2>
+					<div class="governance__content">
+						<div class="governance__table-container">
+							<table class="governance__table">
+								<thead>
+									<tr>
+										<th class="governance__table-num">#</th>
+										<th class="governance__table-title">Proposial title</th>
+										<th class="governance__table-voted">Voted</th>
+										<th class="governance__table-status">Status</th>
+										<th class="governance__table-start">Start</th>
+										<th class="governance__table-end">End</th>
+										<th class="governance__table-snapshot">Snapshot</th>
+										<th class="governance__table-forum">Forum</th>
+										<th class="governance__table-voting">Voting</th>
+									</tr>
+								</thead>
+								
+								@@for (var i = 0; i < 6; i++) {
+									@@include('html/governance-table-tr.html', {})
+								}							
+	
+							</table>												
+						</div>
+					</div>					
+				</div>
+			</div>
+
+		</div>
+	</main>	
+	<script src="./js/app.min.js"></script>
+</body>
+</html>

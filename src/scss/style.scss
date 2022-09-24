@@ -1,0 +1,87 @@
+@import './_variables.scss';
+@import './normalize.scss';
+@import './fonts.scss';
+@import './swiper/swiper.scss';
+@import './swiper/thumbs.scss';
+
+@import './blocks/container.scss';
+@import './blocks/header.scss';
+@import './blocks/navigation.scss';
+@import './blocks/main.scss';
+@import './blocks/main-menu.scss';
+@import './blocks/select.scss';
+@import './blocks/content.scss';
+@import './blocks/page-tabs.scss';
+@import './blocks/dashboard.scss';
+@import './blocks/text-link.scss';
+@import './blocks/filter.scss';
+@import './blocks/menu-button.scss';
+@import './blocks/mobile-menu.scss';
+@import './blocks/page-title.scss';
+@import './blocks/cards-gallery.scss';
+@import './blocks/position-card.scss';
+@import './blocks/card.scss';
+@import './blocks/social-links.scss';
+@import './blocks/copyrights.scss';
+@import './blocks/btn.scss';
+@import './blocks/widgets.scss';
+@import './blocks/widget.scss';
+@import './blocks/object-page.scss';
+@import './blocks/path.scss';
+@import './blocks/page-text.scss';
+@import './blocks/docs-list.scss';
+@import './blocks/block-title.scss';
+@import './blocks/verified.scss';
+@import './blocks/team-list.scss';
+@import './blocks/input-container.scss';
+@import './blocks/text-input.scss';
+@import './blocks/input-label.scss';
+@import './blocks/scale.scss';
+@import './blocks/external-link.scss';
+@import './blocks/checkbox.scss';
+@import './blocks/info-button.scss';
+@import './blocks/hide-block-button';
+@import './blocks/hidden-block.scss';
+@import './blocks/gallery-swiper.scss';
+@import './blocks/thumbs-swiper.scss';
+@import './blocks/popup.scss';
+@import './blocks/staking-farming.scss';
+@import './blocks/input-subscription.scss';
+@import './blocks/farming.scss';
+@import './blocks/transmute.scss';
+@import './blocks/card-tabs.scss';
+@import './blocks/input-subscription-icon.scss';
+@import './blocks/second-market.scss';
+@import './blocks/governance.scss';
+@import './blocks/external-link-alt.scss';
+@import './blocks/connect-wallet-popup.scss';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'EuclidCircularB', sans-serif;	
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	margin: 0;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.wrap {
+	width: 100%;
+	max-width: 1440px;		
+	position: relative;
+	padding: 0 40px;
+	margin: 0 auto;
+
+	@media (max-width: 768px) {
+		padding: 0 20px;
+	}
+}

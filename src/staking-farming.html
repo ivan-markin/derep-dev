@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+	"title": "Staking & Farming"
+})
+
+<body class="container">	
+	@@include('html/mobile-menu.html', {
+		dashboard: '',
+		invest: '',
+		staking: 'active',
+		transmute: '',
+		secondMarket: '',
+		governance: ''
+	})	
+	
+	@@include('html/connect-wallet-popup.html', {})
+	
+	@@include('html/header.html', {})
+	
+	<main class="main">
+		@@include('html/navigation.html', {
+			dashboard: '',
+      invest: '',
+      staking: 'active',
+      transmute: '',
+      secondMarket: '',
+      governance: ''
+		})
+		
+		<div class="content content_no-header">															
+
+			<div class="wrap">				
+				<div class="staking-farming">
+					<div class="staking-farming__top">
+						<div class="staking-farming__top-item">
+							<h2 class="page-title">Staking overview</h2>
+							<div class="widget widget_large">
+								<div class="widget__content">
+									<span class="widget__title">Total staked</span>
+									<span class="widget__value">$24 492 214</span>
+								</div>
+								<div class="widget__content">
+									<span class="widget__title">APY</span>
+									<span class="widget__value">11 583%</span>
+								</div>
+							</div>
+						</div>
+						<div class="staking-farming__top-item">
+							<h2 class="page-title">Your staking</h2>
+							<div class="widget widget_large">
+								<div class="widget__content">
+									<span class="widget__title">Staking balance</span>
+									<span class="widget__value">$23 242</span>
+								</div>
+								<div class="widget__content">
+									<span class="widget__title"></span>
+									<span class="widget__value">3 942 312 REP</span>
+								</div>
+							</div>
+						</div>
+						<div class="staking-farming__top-item">
+							<h2 class="page-title">Deposit</h2>
+							<div class="staking-farming__deposit widget widget_large">
+								<h3 class="staking-farming__deposit-title">Deposit your LP tokens to staking</h3>
+								<div class="input-container">
+									<span class="input-label">Amount</span>
+									<input class="text-input" type="text" placeholder="Amount">
+									<span class="input-subscription">Balance: 234 831 LP-REP</span>
+									<button class="input-container__max-btn">Max</button>
+								</div>
+								<button class="widget__button btn">Deposit</button>
+							</div>
+						</div>
+						<div class="staking-farming__top-item">
+							<h2 class="page-title">Withdrawl</h2>
+							<div class="staking-farming__withdrawl widget widget_large">
+								<div class="widget__header">
+									<div class="page-tabs">
+										<a class="page-tabs__item active" href="">Claim reward</a>
+										<a class="page-tabs__item" href="">Withdraw LP tokens</a>
+									</div>
+								</div>
+								<div class="widget">
+									<div class="widget__content">
+										<span class="widget__title">Amount</span>
+										<span class="widget__value">234 831 REP</span>
+									</div>									
+								</div>
+								<button class="widget__button btn btn_secondary">
+									<span>Claim</span>
+								</button>
+							</div>
+						</div>					
+					</div>		
+					
+					<div class="staking-farming__bottom">
+						<div class="farming">
+							<div class="farming__header">
+								<h2 class="page-title">Farming</h2>
+								<div class="farming__controls">
+									<button class="farming__control farming__control_prev swiper-button-prev"></button>
+									<button class="farming__control farming__control_next swiper-button-next">View next pool</button>
+								</div>								
+							</div>	
+							<div class="farming__slider swiper">
+								<div class="swiper-wrapper">
+									<div class="farming__slide swiper-slide">
+										<div class="farming__slide-item farming__slide-item_primary widget">
+											<div class="widget__content">
+												<div class="farming__slide-item-title">
+													<img class="farming__slide-icon" src="@img/farming-logo.png" alt="">
+													<span class="farming__slide-value widget__value">UNISWAP Pool</span>
+												</div>
+												<a class="external-link" href="">View contract</a>
+											</div>												
+										</div>
+										<div class="farming__slide-item widget">
+											<div class="widget__content">
+												<div class="widget__title">
+													<span>Tokens</span>
+													<button class="info-button">?</button>
+												</div>
+												<span class="widget__value">
+													ETH–REP
+												</span>
+											</div>												
+										</div>
+										<div class="farming__slide-item widget">
+											<div class="widget__content">
+												<div class="widget__title">
+													<span>APY</span>
+													<button class="info-button">?</button>
+												</div>
+												<span class="widget__value">
+													8 312%
+												</span>
+											</div>												
+										</div>
+										<div class="farming__slide-item widget">
+											<div class="widget__content">
+												<div class="widget__title">
+													<span>TVL</span>
+													<button class="info-button">?</button>
+												</div>
+												<span class="widget__value">
+													$1 323 442
+												</span>
+											</div>												
+										</div>
+										<div class="farming__slide-item widget">
+											<div class="widget__content">
+												<div class="widget__title">
+													<span>LP Tokens</span>
+													<button class="info-button">?</button>
+												</div>
+												<span class="widget__value">
+													1 582 659 281 REP
+												</span>
+											</div>												
+										</div>
+									</div>		
+									
+									<div class="farming__slide swiper-slide">
+										<div class="farming__slide-item farming__slide-item_primary widget">
+											<div class="widget__content">
+												<div class="farming__slide-item-title">
+													<img class="farming__slide-icon" src="@img/farming-logo.png" alt="">
+													<span class="farming__slide-value">UNISWAP Pool</span>
+												</div>
+												<a class="external-link" href="">View contract</a>
+											</div>												
+										</div>
+										<div class="farming__slide-item widget">
+											<div class="widget__content">
+												<div class="widget__title">
+													<span>Tokens</span>
+													<button class="info-button">?</button>
+												</div>
+												<span class="widget__value">
+													ETH–REP
+												</span>
+											</div>												
+										</div>
+										<div class="farming__slide-item widget">
+											<div class="widget__content">
+												<div class="widget__title">
+													<span>Tokens</span>
+													<button class="info-button">?</button>
+												</div>
+												<span class="widget__value">
+													ETH–REP
+												</span>
+											</div>												
+										</div>
+										<div class="farming__slide-item widget">
+											<div class="widget__content">
+												<div class="widget__title">
+													<span>Tokens</span>
+													<button class="info-button">?</button>
+												</div>
+												<span class="widget__value">
+													ETH–REP
+												</span>
+											</div>												
+										</div>
+										<div class="farming__slide-item widget">
+											<div class="widget__content">
+												<div class="widget__title">
+													<span>Tokens</span>
+													<button class="info-button">?</button>
+												</div>
+												<span class="widget__value">
+													ETH–REP
+												</span>
+											</div>												
+										</div>
+									</div>	
+								</div>
+							</div>						
+						</div>
+
+						<div class="staking-farming__last">
+							<div class="staking-farming__top-item">
+								<h2 class="page-title">Invest in pool</h2>
+								<div class="staking-farming__deposit widget widget_large">
+									<h3 class="staking-farming__deposit-title">Deposit your LP tokens to staking</h3>
+									<div class="input-container">
+										<span class="input-label">Amount</span>
+										<input class="text-input" type="text" placeholder="Amount">
+										<span class="input-subscription">Balance: 234 831 LP-REP</span>
+										<button class="input-container__max-btn">Max</button>
+									</div>
+									<button class="widget__button btn">Deposit</button>
+								</div>
+							</div>
+							<div class="staking-farming__top-item">
+								<h2 class="page-title">Withdrawl</h2>
+								<div class="staking-farming__withdrawl widget widget_large">
+									<div class="widget__header">
+										<div class="page-tabs">
+											<a class="page-tabs__item active" href="">Claim reward</a>
+											<a class="page-tabs__item" href="">Withdraw LP tokens</a>
+										</div>
+									</div>
+									<div class="widget">
+										<div class="widget__content">
+											<span class="widget__title">Amount</span>
+											<span class="widget__value">234 831 REP</span>
+										</div>									
+									</div>
+									<button class="widget__button btn btn_secondary">
+										<span>Claim</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>	
+	<script src="./js/app.min.js"></script>
+</body>
+</html>

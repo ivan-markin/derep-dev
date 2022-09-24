@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+	"title": "Miami Gold Resort"
+})
+
+<body class="container">	
+	@@include('html/mobile-menu.html', {
+		dashboard: '',
+		invest: 'active',
+		staking: '',
+		transmute: '',
+		secondMarket: '',
+		governance: ''
+	})	
+	
+	@@include('html/connect-wallet-popup.html', {})
+	
+	@@include('html/header.html', {})
+	
+	<main class="main">
+		@@include('html/navigation.html', {
+			dashboard: '',
+      invest: 'active',
+      staking: '',
+      transmute: '',
+      secondMarket: '',
+      governance: ''
+		})
+		
+		<div class="content content_no-header">															
+
+			<div class="wrap">
+				<div class="path">
+					<a class="path__link" href="./invest.html">Real estate objects</a>
+					<span class="path__arrow">–></span>
+					<span class="path__current">Miami Gold Resort</span>
+				</div>
+
+				<div class="object-page">
+					
+					@@include('./html/object-page-content.html', {})
+
+					@@include('./html/object-parameters.html', {
+						invest: '',
+						reward: 'active'
+					})
+
+				</div>
+			</div>
+
+		</div>
+	</main>	
+	<script src="./js/app.min.js"></script>
+</body>
+</html>

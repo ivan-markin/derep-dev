@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+	"title": "Dashboard"
+})
+
+<body class="container">	
+	@@include('html/mobile-menu.html', {
+		dashboard: '',
+		invest: 'active',
+		staking: '',
+		transmute: '',
+		secondMarket: '',
+		governance: ''
+	})	
+	
+	@@include('html/connect-wallet-popup.html', {})
+	
+	@@include('html/header.html', {})
+	
+	<main class="main">
+		@@include('html/navigation.html', {
+			dashboard: '',
+      invest: 'active',
+      staking: '',
+      transmute: '',
+      secondMarket: '',
+      governance: ''
+		})
+		
+		<div class="content content_no-header">										
+
+			<div class="wrap">
+				<div class="widgets widgets_hor">
+					<div class="widget">
+						<img class="dashboard__widget-icon" src="@img/real-estate-icon.svg" alt="">
+						<div class="widget__content">
+							<span class="widget__title">Real estate projects</span>
+							<span class="widget__value">32</span>
+						</div>
+					</div>
+					<div class="widget">
+						<img class="dashboard__widget-icon" src="@img/percent-icon.svg" alt="">
+						<div class="widget__content">
+							<span class="widget__title">Range APY</span>
+							<span class="widget__value">12 – 34</span>
+						</div>
+					</div>
+					<div class="widget">
+						<img class="dashboard__widget-icon" src="@img/investors-icon.svg" alt="">
+						<div class="widget__content">
+							<span class="widget__title">Number of investors</span>
+							<span class="widget__value">3353</span>
+						</div>
+					</div>
+				</div>
+			</div>			
+
+			<div class="cards-gallery">
+				<div class="wrap">
+					<div class="cards-gallery__header">
+						<h2 class="page-title">Real estate objects</h2>
+						<div class="dashboard__filter filter">
+							<label class="filter__item">
+								<input class="filter__input" type="radio" name="posGalleryFilter" checked>
+								<span class="filter__button">Current</span>
+							</label>
+							<label class="filter__item">
+								<input class="filter__input" type="radio" name="posGalleryFilter">
+								<span class="filter__button">History</span>
+							</label>															
+						</div>
+					</div>
+
+					<div class="cards-gallery__content cards-gallery__content_4col">
+
+						@@for (var i = 0; i < 8; i++) {
+							@@include('html/object-card.html', {})
+						}																													
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>	
+	<script src="./js/app.min.js"></script>
+</body>
+</html>

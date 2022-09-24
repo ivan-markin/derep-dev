@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+	"title": "Dashboard"
+})
+
+<body class="container">	
+	@@include('html/mobile-menu.html', {
+		dashboard: 'active',
+		invest: '',
+		staking: '',
+		transmute: '',
+		secondMarket: '',
+		governance: ''
+	})	
+
+	@@include('html/connect-wallet-popup.html', {})
+	
+	@@include('html/header.html', {})
+	
+	<main class="main">
+		@@include('html/navigation.html', {
+			dashboard: 'active',
+      invest: '',
+      staking: '',
+      transmute: '',
+      secondMarket: '',
+      governance: ''
+		})
+		
+		<div class="content">
+			<div class="content__header">
+				<div class="wrap">
+					<div class="content__header-cnt">
+						<div class="page-tabs">
+							<a class="page-tabs__item active">DeRep overview</a>
+							<a class="page-tabs__item" href="./dashboard-investments.html">Your investments</a>
+						</div>
+						<button class="content__header-btn">Learn more about platform  📖</button>
+					</div>					
+				</div>
+			</div>						
+
+			<div class="dashboard">
+				<div class="wrap">					
+					<div class="dashboard__content">						
+						<div class="dashboard__widgets">
+							<div class="dashboard__widget dashboard__widget_primary">
+								<img class="dashboard__widget-icon" src="@img/lock-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">
+										Total Value Locked
+										<button class="info-button">?</button>
+									</span>
+									<span class="dashboard__widget-value">$1 346 213</span>
+								</div>
+							</div>
+							<div class="dashboard__widget">
+								<img class="dashboard__widget-icon" src="@img/investors-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">
+										Number of investors
+										<button class="info-button">?</button>
+									</span>
+									<span class="dashboard__widget-value">3353</span>
+								</div>
+							</div>
+							<div class="dashboard__widget">
+								<img class="dashboard__widget-icon" src="@img/real-estate-icon.svg" alt="">
+								<div class="dashboard__widget-content">
+									<span class="dashboard__widget-title">
+										Real estate projects
+										<button class="info-button">?</button>
+									</span>
+									<span class="dashboard__widget-value">32</span>
+								</div>
+							</div>
+							<div class="dashboard__widget dashboard__widget_vert">
+								<div class="dashboard__widget-container">
+									<img class="dashboard__widget-icon" src="@img/sage-icon.svg" alt="">
+									<div class="dashboard__widget-content">
+										<span class="dashboard__widget-title">
+											Staked $REP
+											<button class="info-button">?</button>
+										</span>
+										<span class="dashboard__widget-value">342 134.32</span>									
+									</div>	
+								</div>								
+								<button class="btn btn_small">Stake</button>															
+							</div>							
+						</div>	
+						
+						@@include('html/dashboard.html', {})
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>	
+	<script src="./js/app.min.js"></script>
+</body>
+</html>

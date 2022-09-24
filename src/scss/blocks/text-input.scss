@@ -1,0 +1,21 @@
+.text-input {
+	height: 56px;
+	width: 100%;
+	border-radius: 28px;
+	border: 0;
+	background-color: #212121;
+	border: #212121 1px solid;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	transition: all .1s;
+	padding: 0 24px;
+
+	&::placeholder {
+		opacity: .4;
+	}
+
+	&:focus {		
+		border: #306FDB 1px solid;
+	}
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+	"title": "Transmute"
+})
+
+<body class="container">	
+	@@include('html/mobile-menu.html', {
+		dashboard: '',
+		invest: '',
+		staking: '',
+		transmute: '',
+		secondMarket: 'active',
+		governance: ''
+	})	
+	
+	@@include('html/connect-wallet-popup.html', {})
+	
+	@@include('html/header.html', {})
+	
+	<main class="main">
+		@@include('html/navigation.html', {
+			dashboard: '',
+      invest: '',
+      staking: '',
+      transmute: '',
+      secondMarket: 'active',
+      governance: ''
+		})
+		
+		<div class="content content_no-header">															
+
+			<div class="wrap">				
+				<div class="second-market">
+					<div class="second-market__header">
+						<h2 class="second-market__title page-title">Orders</h2>
+						<div class="second-market__header-filters">
+							<div class="second-market__header-filters-item select select_regular">
+								<button class="select__button">Sort by</button>
+								<div class="select__dropdown"></div>
+							</div>							
+							<button class="second-market__header-filters-item btn btn_wide btn_secondary">
+								<span>Create order</span>
+							</button>
+						</div>
+					</div>
+					<div class="second-market__content">
+						
+						@@for (var i = 0; i < 6; i++) {
+							@@include('html/orders-card.html', {})
+						}
+												
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>	
+	<script src="./js/app.min.js"></script>
+</body>
+</html>

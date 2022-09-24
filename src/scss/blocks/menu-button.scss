@@ -1,0 +1,17 @@
+.menu-button {
+	flex: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: none;	
+	background: #3E3E3E url('../../img/menu-icon.svg') no-repeat center;		
+	cursor: pointer;
+
+	@media (min-width: 769px) {
+		display: none;
+	}
+
+	&.active {
+		background-image: url('../../img/menu-close-icon.svg');
+	}
+}

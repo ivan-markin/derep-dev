@@ -1,0 +1,16 @@
+.navigation {
+	flex: none;	
+	background-color: black;
+	border-right: 1px solid rgba(173, 182, 255, 0.15);
+	padding: 40px 80px 50px 60px;
+
+	@media (max-width: 768px) {
+		display: none;		
+	}
+
+	&__bottom {
+		width: 190px;
+		position: fixed;
+		bottom: 40px;
+	}
+}
